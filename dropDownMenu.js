@@ -1,9 +1,11 @@
 const dropDownMenu = function (...options) {
     const dropDownMenu = document.createElement('nav');
+    dropDownMenu.classList.add('drop-down-menu');
 
-    const button = document.createElement('button');
-    button.textContent = 'Click me!';
-    dropDownMenu.appendChild(button);
+    const dropDownButton = document.createElement('button');
+    dropDownButton.textContent = 'Click me!';
+    dropDownButton.classList.add('drop-down-button');
+    dropDownMenu.appendChild(dropDownButton);
 
     options.forEach((option) => {
         const li = document.createElement('li');
@@ -13,7 +15,7 @@ const dropDownMenu = function (...options) {
         dropDownMenu.appendChild(li);
     });
 
-    button.addEventListener('click', () => {
+    dropDownButton.addEventListener('click', () => {
         Array.from(document.getElementsByClassName('drop-down-option')).forEach(
             (li) =>
                 (li.style.display =
