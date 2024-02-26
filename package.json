@@ -1,0 +1,27 @@
+{
+  "name": "drop-down-menu-jo",
+  "version": "1.0.1",
+  "description": "A simple drop-down menu built from scratch.",
+  "main": "./src/js/dropDownMenu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open-app-name \"Google Chrome\" --config webpack.config.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "drop-down-menu"
+  ],
+  "author": "Joseph Lee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jooo-lee/drop-down-menu"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}

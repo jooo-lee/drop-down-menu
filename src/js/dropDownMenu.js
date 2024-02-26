@@ -1,3 +1,5 @@
+import '../styles.css';
+
 const dropDownMenu = function (...options) {
     const dropDownMenu = document.createElement('nav');
     dropDownMenu.classList.add('drop-down-menu');
